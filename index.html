@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Почта России</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <link rel="stylesheet" href="assets/styles/index.css">
+</head>
+
+<body>
+    <form class="blank" action="" method="post">
+        <div class="blank__row">
+            <div class="blank__col">
+                <div class="logo"><img class="logo__cyber-money" src="assets/images/cyber-money.png" alt="" /><img class="logo__pochta" src="assets/images/logo.png" alt="" /></div>
+                <div class="number">
+                    <div class="number__name">прием</div>
+                    <div class="number__row">
+                        <div class="number__label">№</div>
+                        <div class="number__col">
+                            <div class="number__line"></div>
+                            <div class="number__note">(по накладной ф.16)</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="control">
+                    <div class="control__label">Контроль</div>
+                    <div class="control__box">
+                        <div class="control__row">
+                            <div class="control__square"></div>
+                            <div class="control__col control__date">
+                                <div class="control__line"></div>
+                                <div class="control__note">(дата)</div>
+                            </div>
+                        </div>
+                        <div class="control__col">
+                            <div class="control__line"></div>
+                            <div class="control__note">(подпись)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="zone-kkm">
+                <div class="zone-kkm__text">Зона оттиска ККМ</div>
+            </div>
+            <div class="zone-code">
+                <div class="zone-code__text">Зона<br>нанесения двумерного<br>матричного кода</div>
+            </div>
+            <div class="blank__name">ф.112ЭП</div>
+        </div>
+        <div class="blank__row">
+            <div class="blank__text-1">Обведенное жирной линией заполняется отправителем перевода или РПО</div>
+            <div class="blank__text-2">Исправления не допускаются</div>
+            <div class="blank__box">
+                <div class="postal-transfer">
+                    <div class="postal-transfer__row">
+                        <div class="label-lg">ПОЧТОВЫЙ ПЕРЕВОД</div>
+                        <div class="postal-transfer__field"><input class="postal-transfer__input" type="text" />
+                            <div class="note">(Рубли прописью, копейки цифрами)</div>
+                        </div>
+                    </div>
+                    <div class="postal-transfer__row">
+                        <div class="postal-transfer__col">
+                            <div class="postal-transfer__price">
+                                <div class="postal-transfer__text">на</div><input class="input postal-transfer__price-rub" type="text" />
+                                <div class="postal-transfer__text">руб.</div><input class="input postal-transfer__price-kop" type="text" />
+                                <div class="postal-transfer__text">коп.</div>
+                            </div>
+                            <div class="postal-transfer__cod"><input class="postal-transfer__checkbox" type="checkbox" id="cod" /><label class="postal-transfer__label" for="cod">НАЛОЖЕННЫЙ<br>ПЛАТЕЖ</label></div>
+                        </div>
+                        <div class="postal-transfer__phone-col">
+                            <div class="postal-transfer__row">
+                                <div class="checkbox postal-transfer__checkbox-wrap"><input class="checkbox__input" type="checkbox" id="tohome" /><label class="checkbox__label" for="tohome">с доставкой на дом</label></div>
+                                <div class="postal-transfer__sms">
+                                    <div class="postal-transfer__sms-text">SMS о поступлении почтового перевода в ОПС<br>выплаты, № мобильного телефона адресата</div>
+                                </div>
+                                <div class="postal-transfer__plus">+</div>
+                                <div class="postal-transfer__seven">7</div>
+                                <div class="input-section postal-transfer__input-section"><input class="input-section__input" type="text" maxlength="10" value="1111111111" />
+                                    <div class="input-section__text"></div><span class="input-section__sep" style="left: 16px"></span><span class="input-section__sep" style="left: 32px"></span><span class="input-section__sep" style="left: 48px"></span><span class="input-section__sep" style="left: 64px"></span><span class="input-section__sep" style="left: 80px"></span><span class="input-section__sep" style="left: 96px"></span><span class="input-section__sep" style="left: 112px"></span><span class="input-section__sep" style="left: 128px"></span><span class="input-section__sep" style="left: 144px"></span>
+                                </div>
+                            </div>
+                            <div class="postal-transfer__row">
+                                <div class="checkbox postal-transfer__checkbox-wrap"><input class="checkbox__input" type="checkbox" id="notice" /><label class="checkbox__label" for="notice">с уведомлением</label></div>
+                                <div class="postal-transfer__sms">
+                                    <div class="postal-transfer__sms-text">SMS о выплате почтового перевода получателю<br>№ моб. тел. отправителя</div>
+                                </div>
+                                <div class="postal-transfer__plus">+</div>
+                                <div class="postal-transfer__seven">7</div>
+                                <div class="input-section postal-transfer__input-section"><input class="input-section__input" type="text" maxlength="10" value="1111111111" />
+                                    <div class="input-section__text"></div><span class="input-section__sep" style="left: 16px"></span><span class="input-section__sep" style="left: 32px"></span><span class="input-section__sep" style="left: 48px"></span><span class="input-section__sep" style="left: 64px"></span><span class="input-section__sep" style="left: 80px"></span><span class="input-section__sep" style="left: 96px"></span><span class="input-section__sep" style="left: 112px"></span><span class="input-section__sep" style="left: 128px"></span><span class="input-section__sep" style="left: 144px"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="towhom">
+                    <div class="towhom__row">
+                        <div class="towhom__label">Кому:</div><input class="input towhom__input" type="text" />
+                    </div>
+                    <div class="note">(для юридического лица - полное или краткое наименование, для физического лица - Фамилия, Имя а также Отчество (если иное не вытекает из национального обычая) полностью)</div>
+                </div>
+                <div class="where">
+                    <div class="where__row">
+                        <div class="where__label">Куда:</div><input class="input where__input" type="text" />
+                    </div>
+                    <div class="note">(полный адрес получателя)</div>
+                    <div class="where__row"><input class="input where__input" type="text" />
+                        <div class="zip-code where__zip-code"><input class="zip-code__input" type="text" maxlength="6" />
+                            <div class="note zip-code__note">(индекс)</div><span class="zip-code__sep" style="left: 19px"></span><span class="zip-code__sep" style="left: 38px"></span><span class="zip-code__sep" style="left: 57px"></span><span class="zip-code__sep" style="left: 76px"></span><span class="zip-code__sep" style="left: 95px"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="message">
+                    <div class="message__label-wrap">
+                        <div class="message__label">Сообщение</div>
+                        <div class="message__text">или реквизиты л/c</div>
+                    </div>
+                    <div class="message__input-wrap">
+                        <div class="input-half"><input class="input-half__input" type="text" maxlength="35" /><span class="input-half__sep" style="left: 0px"></span><span class="input-half__sep" style="left: 18px"></span><span class="input-half__sep" style="left: 36px"></span><span class="input-half__sep" style="left: 54px"></span><span class="input-half__sep" style="left: 73px"></span><span class="input-half__sep" style="left: 91px"></span><span class="input-half__sep" style="left: 109px"></span><span class="input-half__sep" style="left: 128px"></span><span class="input-half__sep" style="left: 146px"></span><span class="input-half__sep" style="left: 164px"></span><span class="input-half__sep" style="left: 183px"></span><span class="input-half__sep" style="left: 201px"></span><span class="input-half__sep" style="left: 219px"></span><span class="input-half__sep" style="left: 237px"></span><span class="input-half__sep" style="left: 256px"></span><span class="input-half__sep" style="left: 274px"></span><span class="input-half__sep" style="left: 292px"></span><span class="input-half__sep" style="left: 311px"></span><span class="input-half__sep" style="left: 329px"></span><span class="input-half__sep" style="left: 347px"></span><span class="input-half__sep" style="left: 366px"></span><span class="input-half__sep" style="left: 384px"></span><span class="input-half__sep" style="left: 402px"></span><span class="input-half__sep" style="left: 420px"></span><span class="input-half__sep" style="left: 439px"></span><span class="input-half__sep" style="left: 457px"></span><span class="input-half__sep" style="left: 475px"></span><span class="input-half__sep" style="left: 494px"></span><span class="input-half__sep" style="left: 512px"></span><span class="input-half__sep" style="left: 530px"></span><span class="input-half__sep" style="left: 549px"></span><span class="input-half__sep" style="left: 567px"></span><span class="input-half__sep" style="left: 585px"></span><span class="input-half__sep" style="left: 603px"></span><span class="input-half__sep" style="left: 622px"></span><span class="input-half__sep" style="left: 640px"></span></div>
+                        <div class="input-half"><input class="input-half__input" type="text" maxlength="35" /><span class="input-half__sep" style="left: 0px"></span><span class="input-half__sep" style="left: 18px"></span><span class="input-half__sep" style="left: 36px"></span><span class="input-half__sep" style="left: 54px"></span><span class="input-half__sep" style="left: 73px"></span><span class="input-half__sep" style="left: 91px"></span><span class="input-half__sep" style="left: 109px"></span><span class="input-half__sep" style="left: 128px"></span><span class="input-half__sep" style="left: 146px"></span><span class="input-half__sep" style="left: 164px"></span><span class="input-half__sep" style="left: 183px"></span><span class="input-half__sep" style="left: 201px"></span><span class="input-half__sep" style="left: 219px"></span><span class="input-half__sep" style="left: 237px"></span><span class="input-half__sep" style="left: 256px"></span><span class="input-half__sep" style="left: 274px"></span><span class="input-half__sep" style="left: 292px"></span><span class="input-half__sep" style="left: 311px"></span><span class="input-half__sep" style="left: 329px"></span><span class="input-half__sep" style="left: 347px"></span><span class="input-half__sep" style="left: 366px"></span><span class="input-half__sep" style="left: 384px"></span><span class="input-half__sep" style="left: 402px"></span><span class="input-half__sep" style="left: 420px"></span><span class="input-half__sep" style="left: 439px"></span><span class="input-half__sep" style="left: 457px"></span><span class="input-half__sep" style="left: 475px"></span><span class="input-half__sep" style="left: 494px"></span><span class="input-half__sep" style="left: 512px"></span><span class="input-half__sep" style="left: 530px"></span><span class="input-half__sep" style="left: 549px"></span><span class="input-half__sep" style="left: 567px"></span><span class="input-half__sep" style="left: 585px"></span><span class="input-half__sep" style="left: 603px"></span><span class="input-half__sep" style="left: 622px"></span><span class="input-half__sep" style="left: 640px"></span></div>
+                    </div>
+                </div>
+                <div class="checking-account-transfer">
+                    <div class="checking-account-transfer__title">заполняется при приеме перевода на расчетный счет</div>
+                    <div class="checking-account-transfer__row">
+                        <div class="inn">
+                            <div class="inn__label">ИНН:</div>
+                            <div class="input-half inn__input-half"><input class="input-half__input" type="text" maxlength="12" /><span class="input-half__sep" style="left: 0px"></span><span class="input-half__sep" style="left: 18px"></span><span class="input-half__sep" style="left: 36px"></span><span class="input-half__sep" style="left: 54px"></span><span class="input-half__sep" style="left: 73px"></span><span class="input-half__sep" style="left: 91px"></span><span class="input-half__sep" style="left: 109px"></span><span class="input-half__sep" style="left: 128px"></span><span class="input-half__sep" style="left: 146px"></span><span class="input-half__sep" style="left: 164px"></span><span class="input-half__sep" style="left: 183px"></span><span class="input-half__sep" style="left: 201px"></span><span class="input-half__sep" style="left: 219px"></span></div>
+                        </div>
+                        <div class="kor-account">
+                            <div class="kor-account__label">Кор/счет:</div>
+                            <div class="input-half kor-account__input-half"><input class="input-half__input" type="text" maxlength="20" /><span class="input-half__sep" style="left: 0px"></span><span class="input-half__sep" style="left: 18px"></span><span class="input-half__sep" style="left: 36px"></span><span class="input-half__sep" style="left: 54px"></span><span class="input-half__sep" style="left: 73px"></span><span class="input-half__sep" style="left: 91px"></span><span class="input-half__sep" style="left: 109px"></span><span class="input-half__sep" style="left: 128px"></span><span class="input-half__sep" style="left: 146px"></span><span class="input-half__sep" style="left: 164px"></span><span class="input-half__sep" style="left: 183px"></span><span class="input-half__sep" style="left: 201px"></span><span class="input-half__sep" style="left: 219px"></span><span class="input-half__sep" style="left: 237px"></span><span class="input-half__sep" style="left: 256px"></span><span class="input-half__sep" style="left: 274px"></span><span class="input-half__sep" style="left: 292px"></span><span class="input-half__sep" style="left: 311px"></span><span class="input-half__sep" style="left: 329px"></span><span class="input-half__sep" style="left: 347px"></span><span class="input-half__sep" style="left: 366px"></span></div>
+                        </div>
+                    </div>
+                    <div class="bank-name">
+                        <div class="bank-name__label">Наименование банка:</div><input class="input bank-name__input" type="text" />
+                    </div>
+                    <div class="checking-account-transfer__row">
+                        <div class="checking-account">
+                            <div class="checking-account__label">Рас/счет:</div>
+                            <div class="input-half checking-account__input-half"><input class="input-half__input" type="text" maxlength="20" /><span class="input-half__sep" style="left: 0px"></span><span class="input-half__sep" style="left: 18px"></span><span class="input-half__sep" style="left: 36px"></span><span class="input-half__sep" style="left: 54px"></span><span class="input-half__sep" style="left: 73px"></span><span class="input-half__sep" style="left: 91px"></span><span class="input-half__sep" style="left: 109px"></span><span class="input-half__sep" style="left: 128px"></span><span class="input-half__sep" style="left: 146px"></span><span class="input-half__sep" style="left: 164px"></span><span class="input-half__sep" style="left: 183px"></span><span class="input-half__sep" style="left: 201px"></span><span class="input-half__sep" style="left: 219px"></span><span class="input-half__sep" style="left: 237px"></span><span class="input-half__sep" style="left: 256px"></span><span class="input-half__sep" style="left: 274px"></span><span class="input-half__sep" style="left: 292px"></span><span class="input-half__sep" style="left: 311px"></span><span class="input-half__sep" style="left: 329px"></span><span class="input-half__sep" style="left: 347px"></span><span class="input-half__sep" style="left: 366px"></span></div>
+                        </div>
+                        <div class="bik">
+                            <div class="bik__label">БИК:</div>
+                            <div class="input-half bik__input-half"><input class="input-half__input" type="text" maxlength="9" /><span class="input-half__sep" style="left: 0px"></span><span class="input-half__sep" style="left: 18px"></span><span class="input-half__sep" style="left: 36px"></span><span class="input-half__sep" style="left: 54px"></span><span class="input-half__sep" style="left: 73px"></span><span class="input-half__sep" style="left: 91px"></span><span class="input-half__sep" style="left: 109px"></span><span class="input-half__sep" style="left: 128px"></span><span class="input-half__sep" style="left: 146px"></span><span class="input-half__sep" style="left: 164px"></span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="from-whom">
+                    <div class="from-whom__row">
+                        <div class="from-whom__label">От кого:</div><input class="input from-whom__input" type="text" />
+                    </div>
+                    <div class="note">(для юридического лица - полное или краткое наименование, для физического лица - Фамилия, Имя а также Отчество (если иное не вытекает из национального обычая) полностью)</div>
+                </div>
+                <div class="sender-address">
+                    <div class="sender-address__row">
+                        <div class="sender-address__label">Адрес отправителя:</div><input class="input sender-address__input" type="text" />
+                    </div>
+                    <div class="note sender-address__note">(юр.лицо-фактический почтовый адрес, физ.лицо-адрес места нахождения/пребывания)</div>
+                    <div class="sender-address__row"><input class="input sender-address__input" type="text" />
+                        <div class="zip-code sender-address__zip-code"><input class="zip-code__input" type="text" maxlength="6" />
+                            <div class="note zip-code__note">(индекс)</div><span class="zip-code__sep" style="left: 19px"></span><span class="zip-code__sep" style="left: 38px"></span><span class="zip-code__sep" style="left: 57px"></span><span class="zip-code__sep" style="left: 76px"></span><span class="zip-code__sep" style="left: 95px"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="blank__row">
+            <div class="blank__text-3">Обведенное жирной линией заполняется отправителем перевода</div>
+            <div class="blank__text-4">Исправления не допускаются</div>
+            <div class="blank__box">
+                <div class="sender-address-reg">
+                    <div class="sender-address-reg__row">
+                        <div class="sender-address-reg__label">Адрес регистрации отправителя:</div><input class="input sender-address-reg__input" type="text" />
+                    </div>
+                    <div class="note sender-address-reg__note">(юр.лицо-адрес местонахождения по месту государственной регистрации, физ.лицо-адрес места жительства/регистрации, заполняется при несовпадении с адресом отправителя, а также до востребования или на а/я)</div>
+                    <div class="sender-address-reg__row"><input class="input sender-address-reg__input" type="text" />
+                        <div class="zip-code sender-address-reg__zip-code"><input class="zip-code__input" type="text" maxlength="6" />
+                            <div class="note zip-code__note">(индекс)</div><span class="zip-code__sep" style="left: 19px"></span><span class="zip-code__sep" style="left: 38px"></span><span class="zip-code__sep" style="left: 57px"></span><span class="zip-code__sep" style="left: 76px"></span><span class="zip-code__sep" style="left: 95px"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="checking-account-transfer-2">
+                    <div class="checking-account-transfer-2__title">не заполняется при приеме перевода от физического лица с расчетом наличными денежными средствами</div>
+                    <div class="checking-account-transfer-2__row">
+                        <div class="inn">
+                            <div class="inn__label">ИНН:</div>
+                            <div class="input-half inn__input-half"><input class="input-half__input" type="text" maxlength="12" /><span class="input-half__sep" style="left: 0px"></span><span class="input-half__sep" style="left: 18px"></span><span class="input-half__sep" style="left: 36px"></span><span class="input-half__sep" style="left: 54px"></span><span class="input-half__sep" style="left: 73px"></span><span class="input-half__sep" style="left: 91px"></span><span class="input-half__sep" style="left: 109px"></span><span class="input-half__sep" style="left: 128px"></span><span class="input-half__sep" style="left: 146px"></span><span class="input-half__sep" style="left: 164px"></span><span class="input-half__sep" style="left: 183px"></span><span class="input-half__sep" style="left: 201px"></span><span class="input-half__sep" style="left: 219px"></span></div>
+                        </div>
+                        <div class="kor-account">
+                            <div class="kor-account__label">Кор/счет:</div>
+                            <div class="input-half kor-account__input-half"><input class="input-half__input" type="text" maxlength="20" /><span class="input-half__sep" style="left: 0px"></span><span class="input-half__sep" style="left: 18px"></span><span class="input-half__sep" style="left: 36px"></span><span class="input-half__sep" style="left: 54px"></span><span class="input-half__sep" style="left: 73px"></span><span class="input-half__sep" style="left: 91px"></span><span class="input-half__sep" style="left: 109px"></span><span class="input-half__sep" style="left: 128px"></span><span class="input-half__sep" style="left: 146px"></span><span class="input-half__sep" style="left: 164px"></span><span class="input-half__sep" style="left: 183px"></span><span class="input-half__sep" style="left: 201px"></span><span class="input-half__sep" style="left: 219px"></span><span class="input-half__sep" style="left: 237px"></span><span class="input-half__sep" style="left: 256px"></span><span class="input-half__sep" style="left: 274px"></span><span class="input-half__sep" style="left: 292px"></span><span class="input-half__sep" style="left: 311px"></span><span class="input-half__sep" style="left: 329px"></span><span class="input-half__sep" style="left: 347px"></span><span class="input-half__sep" style="left: 366px"></span></div>
+                        </div>
+                    </div>
+                    <div class="bank-name">
+                        <div class="bank-name__label">Наименование банка:</div><input class="input bank-name__input" type="text" />
+                    </div>
+                    <div class="checking-account-transfer-2__row">
+                        <div class="checking-account">
+                            <div class="checking-account__label">Рас/счет:</div>
+                            <div class="input-half checking-account__input-half"><input class="input-half__input" type="text" maxlength="20" /><span class="input-half__sep" style="left: 0px"></span><span class="input-half__sep" style="left: 18px"></span><span class="input-half__sep" style="left: 36px"></span><span class="input-half__sep" style="left: 54px"></span><span class="input-half__sep" style="left: 73px"></span><span class="input-half__sep" style="left: 91px"></span><span class="input-half__sep" style="left: 109px"></span><span class="input-half__sep" style="left: 128px"></span><span class="input-half__sep" style="left: 146px"></span><span class="input-half__sep" style="left: 164px"></span><span class="input-half__sep" style="left: 183px"></span><span class="input-half__sep" style="left: 201px"></span><span class="input-half__sep" style="left: 219px"></span><span class="input-half__sep" style="left: 237px"></span><span class="input-half__sep" style="left: 256px"></span><span class="input-half__sep" style="left: 274px"></span><span class="input-half__sep" style="left: 292px"></span><span class="input-half__sep" style="left: 311px"></span><span class="input-half__sep" style="left: 329px"></span><span class="input-half__sep" style="left: 347px"></span><span class="input-half__sep" style="left: 366px"></span></div>
+                        </div>
+                        <div class="bik">
+                            <div class="bik__label">БИК:</div>
+                            <div class="input-half bik__input-half"><input class="input-half__input" type="text" maxlength="9" /><span class="input-half__sep" style="left: 0px"></span><span class="input-half__sep" style="left: 18px"></span><span class="input-half__sep" style="left: 36px"></span><span class="input-half__sep" style="left: 54px"></span><span class="input-half__sep" style="left: 73px"></span><span class="input-half__sep" style="left: 91px"></span><span class="input-half__sep" style="left: 109px"></span><span class="input-half__sep" style="left: 128px"></span><span class="input-half__sep" style="left: 146px"></span><span class="input-half__sep" style="left: 164px"></span></div>
+                        </div>
+                    </div>
+                    <div class="checking-account-transfer-2__row">
+                        <div class="ogrn">
+                            <div class="ogrn__label">ОГРН:</div>
+                            <div class="input-half ogrn__input-half"><input class="input-half__input" type="text" maxlength="15" /><span class="input-half__sep" style="left: 0px"></span><span class="input-half__sep" style="left: 18px"></span><span class="input-half__sep" style="left: 36px"></span><span class="input-half__sep" style="left: 54px"></span><span class="input-half__sep" style="left: 73px"></span><span class="input-half__sep" style="left: 91px"></span><span class="input-half__sep" style="left: 109px"></span><span class="input-half__sep" style="left: 128px"></span><span class="input-half__sep" style="left: 146px"></span><span class="input-half__sep" style="left: 164px"></span><span class="input-half__sep" style="left: 183px"></span><span class="input-half__sep" style="left: 201px"></span><span class="input-half__sep" style="left: 219px"></span><span class="input-half__sep" style="left: 237px"></span><span class="input-half__sep" style="left: 256px"></span><span class="input-half__sep" style="left: 274px"></span></div>
+                        </div>
+                        <div class="payment-order">
+                            <div class="payment-order__row">
+                                <div class="payment-order__label">Платежное поручение №</div><input class="input payment-order__input-1" type="text" />
+                                <div class="payment-order__label">дата</div><input class="input payment-order__input-2" type="text" />
+                            </div>
+                            <div class="note payment-order__note">(при безналичной форме оплаты)</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sender-data">
+                    <div class="sender-data__title">данные отправителя (физ.лица)/представителя отправителя юр.лица</div>
+                    <div class="passport">
+                        <div class="passport__row">
+                            <div class="doc-name">
+                                <div class="doc-name__label">Предъявлен</div>
+                                <div class="doc-name__field"><input class="input doc-name__input" type="text" />
+                                    <div class="note">(наименование документа, удостоверяющего личность)</div>
+                                </div>
+                            </div>
+                            <div class="series">
+                                <div class="series__label">Серия</div><input class="input series__input" type="text" />
+                            </div>
+                            <div class="doc-number">
+                                <div class="doc-number__label">№</div><input class="input doc-number__input" type="text" />
+                            </div>
+                            <div class="date-issue">
+                                <div class="date-issue__label">выдан</div>
+                                <div class="date-issue__field"><input class="input date-issue__input" type="text" />
+                                    <div class="note">(дата выдачи)</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="passport__row">
+                            <div class="who-issued"><input class="input who-issued__input" type="text" />
+                                <div class="note">(наименование учреждения, выдавшего документ)</div>
+                            </div>
+                            <div class="who-issued-code"><input class="input who-issued-code__input" type="text" />
+                                <div class="note">(код подразделения если имеется)</div>
+                            </div>
+                        </div>
+                        <div class="passport__row">
+                            <div class="citizenship">
+                                <div class="citizenship__label">Гражданство:</div><input class="input citizenship__input" type="text" />
+                            </div>
+                            <div class="birth-date">
+                                <div class="birth-date__label">дата рождения</div><input class="input birth-date__input" type="text" />
+                            </div>
+                            <div class="sender-inn">
+                                <div class="sender-inn__label-wrap">
+                                    <div class="sender-inn__label">ИНН</div>
+                                    <div class="note sender-inn__note">(при его наличии)</div>
+                                </div>
+                                <div class="input-section sender-inn__input-section"><input class="input-section__input" type="text" maxlength="12" value="1111111111" />
+                                    <div class="input-section__text"></div><span class="input-section__sep" style="left: 16px"></span><span class="input-section__sep" style="left: 32px"></span><span class="input-section__sep" style="left: 48px"></span><span class="input-section__sep" style="left: 64px"></span><span class="input-section__sep" style="left: 80px"></span><span class="input-section__sep" style="left: 96px"></span><span class="input-section__sep" style="left: 112px"></span><span class="input-section__sep" style="left: 128px"></span><span class="input-section__sep" style="left: 144px"></span><span class="input-section__sep" style="left: 160px"></span><span class="input-section__sep" style="left: 176px"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="guest">
+                        <div class="guest__title">(Дополнительно для нерезидентов России заполняется)</div>
+                        <div class="guest__label">Миграционная<br>карта:</div>
+                        <div class="series guest__series">
+                            <div class="series__label">Серия</div><input class="input series__input" type="text" />
+                        </div>
+                        <div class="doc-number guest__doc-number">
+                            <div class="doc-number__label">№</div><input class="input doc-number__input" type="text" />
+                        </div>
+                        <div class="date-issue-card">
+                            <div class="date-issue-card__label">Дата<br>выдачи</div><input class="input date-issue-card__input" type="text" />
+                        </div>
+                        <div class="tenure">
+                            <div class="tenure__label">Срок<br>пребывания с</div><input class="input tenure__input" type="text" />
+                            <div class="tenure__label-2">по</div><input class="input tenure__input" type="text" />
+                        </div>
+                    </div>
+                    <div class="fio">
+                        <div class="fio__row">
+                            <div class="fio__label">ФИО:</div><input class="input fio__input" type="text" />
+                        </div>
+                        <div class="note fio__note">(Фамилия, Имя, а также Отчество (если иное не вытекает из закона или национального обычая) полностью представителя юридического лица)</div>
+                    </div>
+                    <div class="address-reg">
+                        <div class="address-reg__row">
+                            <div class="address-reg__label">Адрес регистрации:</div><input class="input address-reg__input" type="text" />
+                        </div>
+                        <div class="note address-reg__note">(адрес места жительства/регистрации представителя юридического лица)</div>
+                    </div>
+                </div>
+                <div class="question">
+                    <div class="question__text">Являетесь ли Вы должностным лицом публичных международных организаций или лицом, замещающим (занимающим) государственные должности Российской Федерации, должности членов Совета директоров Центрального Банка Российской Федерации, должности федеральной государственной службы, назначение на которые и освобождение от которых осуществляется Президентом Российской Федерации или Правительством Российской Федерации, должности в Центральном Банке Российской Федерации, государственных корпорациях и иных организациях, созданных Российской Федерацией на основании Федеральных законов, включенных в перечни должностей, определяемых Президентом Российской Федерации</div>
+                    <div class="question__col">
+                        <div class="question__checkbox-wrap">
+                            <div class="checkbox question__checkbox-1"><input class="checkbox__input" type="checkbox" id="yes" /><label class="checkbox__label" for="yes">Да</label></div>
+                            <div class="checkbox question__checkbox-2"><input class="checkbox__input" type="checkbox" id="no" /><label class="checkbox__label" for="no">Нет</label></div>
+                        </div>
+                        <div class="question__label">Подпись</div>
+                    </div>
+                </div>
+                <div class="agree-phone">
+                    <div class="checkbox"><input class="checkbox__input" type="checkbox" id="agree-phone" /><label class="checkbox__label" for="agree-phone">Согласен(на) на отправление информации о новых сервисах и услугах, оказываемых в отделениях почтовой связи на указанный выше мною номер моб. телефона отправителя. Подтверждаю, что данный номер является моим номером моб. телефона, выделенным мне оператором сотовой связи.</label></div>
+                </div>
+                <div class="agree">
+                    <div class="agree__text">В целях осуществления данного почтового перевода подтверждаю свое согласие:<br>- на обработку как автоматизированным, так и неавтоматизированным способом указанных на бланке персональных данных;<br>- на передачу информации о номере почтового перевода, о событиях (о поступлении почтового перевода в ОПС выплаты, о выплате почтового перевода, о перечислении почтового перевода на счет получателя, о дате и месте совершения события).<br>Также подтверждаю свое согласие на передачу номера почтового перевода и событий третьему лицу в целях передачи SMS-сообщений по сетям связи.</div>
+                    <div class="sender-sign">
+                        <div class="sender-sign__label">подпись<br>отправителя</div>
+                        <div class="sender-sign__square"></div>
+                    </div>
+                    <div class="operator-sign">
+                        <div class="operator-sign__line"></div>
+                        <div class="note">(подпись оператора)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <script src="assets/scripts/libs/jquery-3.5.1.min.js"></script>
+    <script src="assets/scripts/index.js"></script>
+</body>
+
+</html>
